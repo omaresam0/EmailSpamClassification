@@ -3,7 +3,11 @@
 The project aims to build a machine learning model that can classify emails as either spam or ham (non-spam).
 The model uses Logistic Regression and employs various techniques to handle imbalanced data and achieve better accuracy in classifying emails.
 
-# 2. Preprocessing and Label Encoding
+# 2. Dataset
+The dataset used in this project contains labeled email messages, where each email is classified as either "spam" or "ham" (non-spam). 
+The dataset provides both the text content of the emails and their corresponding labels.
+
+# 3. Preprocessing and Label Encoding
 
 **Lowercasing:** The text data is converted to lowercase to ensure consistency.
 
@@ -19,9 +23,9 @@ These preprocessing steps help in cleaning the text data, reducing noise, and im
 
 Additionally, the target variable 'Category' (spam or ham) was encoded using Label Encoding to convert it into numerical form    (0 for ham, 1 for spam) for model training.
 
-# 3. Dealing with Imbalanced Data
+# 4. Dealing with Imbalanced Data
 The dataset was imbalanced where the number of spam instances was much smaller compared to the ham instances, affecting the model's performance.
-# 4. Techniques to Handle Imbalanced Data
+# 5. Techniques to Handle Imbalanced Data
 To address the imbalanced data, three techniques were explored:
 
 **Class Weighting:** We applied class weighting to the Logistic Regression model to assign higher weight to the minority class (spam) during training, effectively balancing the importance of both classes.
@@ -34,10 +38,10 @@ The **class weight parameter** proved to be the simplest which generated same re
 
 Handling imbalanced data was crucial in improving model accuracy and performance. The techniques applied helped in correctly classifying both spam and ham emails, leading to a more balanced and reliable model which resulted in improved accuracy results.
 
-# 5. Evaluation Metrics and Confusion Matrix
+# 6. Evaluation Metrics and Confusion Matrix
 The model was evaluated using various metrics, including accuracy, F1-score, recall, and precision. Additionally, The model's performance was visualized using a confusion matrix, which provided insights into true positive, false positive, true negative, and false negative predictions.
 
-# 6. Results
+# 7. Results
 ### Imbalanced Dataset ❎
 - **Accuracy:** 0.965
 
